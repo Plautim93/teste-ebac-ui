@@ -39,6 +39,9 @@ describe('Funcionalidade: Cadastro', () => {
 
 
     });
-
+    it('Deve completar o cadastro com sucesso - usando camando customizado', () => {
+        cy.preCadastro(faker.internet.email(), 'teste@123', faker.person.firstName(), faker.person.lastName())
+        
+    });
 
 });
